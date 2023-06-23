@@ -38,10 +38,6 @@ public class TestClass {
     @Test
     public void test3() {
         Order order = new Order();
-        List<Person> people = new ArrayList<>();
-        people.add(new Person(4, false));
-        people.add(new Person(15, true));
-        people.add(new Person(25, false));
         order.addTicket(new Ticket("free entry ticket", 0));
         order.addTicket(new Ticket("student ticket", 12));
         order.addTicket(new Ticket("normal ticket", 15));
