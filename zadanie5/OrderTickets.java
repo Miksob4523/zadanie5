@@ -1,6 +1,4 @@
 package pl.isa.homeworks.zadanie5;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public final class OrderTickets {

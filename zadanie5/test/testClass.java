@@ -10,7 +10,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class testclass {
+public class testClass {
     @Test
     public void test1() {
         List<Ticket> tickets1 = new ArrayList<>();
@@ -24,7 +24,6 @@ public class testclass {
     @Test
     public void test2() {
         Order order = new Order();
-        OrderTickets orderTickets = new OrderTickets();
         List<Person> people = new ArrayList<>();
         people.add(new Person(4, false));
         people.add(new Person(15, true));
@@ -40,7 +39,6 @@ public class testclass {
     @Test
     public void test3() {
         Order order = new Order();
-        OrderTickets orderTickets = new OrderTickets();
         List<Person> people = new ArrayList<>();
         people.add(new Person(4, false));
         people.add(new Person(15, true));

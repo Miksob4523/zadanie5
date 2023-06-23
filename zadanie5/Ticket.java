@@ -3,8 +3,8 @@ package pl.isa.homeworks.zadanie5;
 import java.util.Objects;
 
 public class Ticket {
-    private String name;
-    private int price;
+    private final String name;
+    private final int price;
 
     @Override
     public boolean equals(Object o) {
