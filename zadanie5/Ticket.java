@@ -1,8 +1,22 @@
 package pl.isa.homeworks.zadanie5;
 
+import java.util.Objects;
+
 public class Ticket {
     private String name;
     private int price;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Ticket ticket)) return false;
+        return getPrice() == ticket.getPrice() && Objects.equals(getName(), ticket.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getPrice());
+    }
 
     public Ticket(String name, int price) {
         this.name = name;
