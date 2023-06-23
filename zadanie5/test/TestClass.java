@@ -23,14 +23,13 @@ public class TestClass {
 
     @Test
     public void test2() {
-        Order order = new Order();
         List<Person> people = new ArrayList<>();
         people.add(new Person(4, false));
         people.add(new Person(15, true));
         people.add(new Person(25, false));
-        order.addTicket(new Ticket("free entry ticket", 0));
-        order.addTicket(new Ticket("student ticket", 12));
-        order.addTicket(new Ticket("normal ticket", 15));
+        OrderTickets orderTickets = new OrderTickets();
+        Order order = orderTickets.takeOrder(people);
+
 
         assertEquals(27, order.getTotalPrice(order.tickets));
 
