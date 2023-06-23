@@ -10,7 +10,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class testClass {
+public class TestClass {
     @Test
     public void test1() {
         List<Ticket> tickets1 = new ArrayList<>();
